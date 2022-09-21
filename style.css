@@ -1,0 +1,23 @@
+/* universal styles */
+* {
+    padding: 5px;
+}
+
+/* display high scores and timer on opposite ends */
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    text-align: center;
+    margin-top: 7%;
+}
+
+h1 {
+    font-size: 7vh;
+}
+
+pre {
+    font-size: large;
+}

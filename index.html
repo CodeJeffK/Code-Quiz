@@ -10,25 +10,44 @@
 </head>
     <body>
         <header>
-            <div>
-                <li>
-                    timer
-                </li>
-            </div>
+            <ul>
+                <div>
+                    <li>
+                        View high scores
+                    </li>
+                </div>
+                <div>
+                    <li>
+                        timer
+                    </li>
+                </div>
+            </ul>
         </header>
 
         <main>
+            <!-- Start quiz -->
             <div>
                 <h1>Coding Quiz Challenge</h1>
                 <pre>
-                    Try to answer the following code-related questions within the time limit.
-                        Keep in mind that incorrect answers will penalize your score/time
-                                                by ten seconds!
+Try to answer the following code-related questions within the time limit.
+Keep in mind that incorrect answers will penalize your score/time
+by ten seconds!
                 </pre>
             </div>
             <div>
                 <button>Start Quiz</button>
             </div>
+
+            <!-- Quiz slides -->
+            <section>
+                <div id="questions"></div>
+                <div id="answers">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </section>
         </main>
 
 
