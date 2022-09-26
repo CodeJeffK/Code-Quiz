@@ -3,37 +3,21 @@
     padding: 5px;
 }
 
-html {
-    background-color: rgb(104, 181, 184);
-}
-
-body {
+/* display high scores and timer on opposite ends */
+ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-/* Styles for body text */
-h1 {
-    font-size: 40px;
-    padding: 20px;
-}
-
-h2 {
-    font-size: 20px;
+main {
     text-align: center;
-    padding: 20px;
+    margin-top: 7%;
 }
 
-/* Button style */
-.button {
-    font-size: 20px;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    margin: 20px;
-    padding: 20px;
-    background-color: rgb(193, 217, 218);
+h1 {
+    font-size: 7vh;
+}
+
+pre {
+    font-size: large;
 }
