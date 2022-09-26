@@ -18,27 +18,6 @@ let h2 = document.querySelector('h2');
 let textClear = document.querySelector('pre');
 let score = document.getElementById('score');
 
-//Add event listener to start quiz button
-startButton.addEventListener('click', startQuiz);
-
-//Function to start quiz
-function startQuiz(event) {
-    event.preventDefault();
-    var timeInterval = setInterval(function () {
-        timeLeft--;
-        timer.innerHTML = 'Time: ' + timeLeft;
-        if (timeLeft <= 0 || quizEnd == true) {
-            clearInterval(timeInterval);
-            quizOver();
-            return;
-        }
-    }, 1000);
-    hidden.classList.add("hide");
-    questionSetContainer.classList.remove("hidden");
-    currentQuestion = 0
-    quiz();
-}
-
 //Quiz questions and answers
 let quizContent = [
     {
@@ -67,6 +46,27 @@ let quizContent = [
         correct: 'console.log',
     },
 ];
+
+//Add event listener to start quiz button
+startButton.addEventListener('click', startQuiz);
+
+//Function to start quiz
+function startQuiz(event) {
+    event.preventDefault();
+    var timeInterval = setInterval(function () {
+        timeLeft--;
+        timer.innerHTML = 'Time: ' + timeLeft;
+        if (timeLeft <= 0 || quizEnd == true) {
+            clearInterval(timeInterval);
+            quizOver();
+            return;
+        }
+    }, 1000);
+    hidden.classList.add("hide");
+    questionSetContainer.classList.remove("hidden");
+    currentQuestion = 0
+    quiz();
+}
 
 //Display questions and answers
 function quiz() {
@@ -129,10 +129,10 @@ function quizOver() {
     questionSetContainer.classList.add('hidden');
     hidden.classList.remove('hide');
     score.classList.remove('hide');
-    h1.innerHTML = "Game Over!";
+    h1.innerHTML = 'Game Over!';
     h2.innerHTML = '';
     textClear.innerHTML = '';
-    startButton.innerHTML = '';
+    startButton.classList.add('hide');
     let finalScore = document.createElement('p');
     timer.classList.add('hidden');
     quizEndScore = timer.innerHTML;
