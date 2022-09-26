@@ -22,40 +22,39 @@
             </ul>
         </header>
 
-        <main>
+        <main class="conatiner">
             <!-- Start quiz -->
-            <div>
+            <div id="main">
                 <h1>Coding Quiz Challenge</h1>
                 <pre>
 Try to answer the following code-related questions within the time limit.
 Keep in mind that incorrect answers will penalize your score/time
 by ten seconds!
                 </pre>
-            </div>
-            <div id="quizButton">
-                <button>Start Quiz</button>
+                <div>
+                    <button id="quizButton">Start Quiz</button>
+                </div>
+                <form id="score" class="hide">
+                    <label for="data">Enter Initials</label>
+                    <input id="initials" type="text" name="data" value="">
+                    <button id="submitScore">Submit</button>
+                </form>
             </div>
 
             <!-- Quiz slides -->
-            <section>
-                <div id="questions"></div>
-                <div id="answers">
-                    <button class="button">1.</button>
-                    <button class="button">2.</button>
-                    <button class="button">3.</button>
-                    <button class="button">4.</button>
-                </div>
-            </section>
+                <section class="hidden">
+                    <div id="quizContainer">
+                        <div id="questions"></div>
+                        <div id="answers">
+                            <button class="button">1.<span id="answer1"></span></button>
+                            <button class="button">2.<span id="answer2"></span></button>
+                            <button class="button">3.<span id="answer3"></span></button>
+                            <button class="button">4.<span id="answer4"></span></button>
+                            <div id="result"></div>
+                        </div>
+                    </div>
+                </section>
         </main>
-
-
-
-
-
-
-
-
-
 
 
 

@@ -3,6 +3,10 @@
     padding: 5px;
 }
 
+html {
+    background-color: rgb(134, 202, 202);
+}
+
 /* display high scores and timer on opposite ends */
 ul {
     display: flex;
@@ -20,4 +24,33 @@ h1 {
 
 pre {
     font-size: large;
+}
+/* Quiz content */
+button {
+    background-color: rgb(218, 141, 167);
+    padding: 7px;
+}
+
+.container {
+    display: flexbox;
+    justify-content: center;
+    padding: 10px;
+}
+
+#quizContainer {
+    text-align: center;
+}
+
+
+/* Hidden section to hide certain quiz elements */
+.hidden {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+#answers {
+    display: grid;
 }
